@@ -56,9 +56,9 @@ header{
   background-color: #a7bfd8;
   background-position: center;
   background-repeat: no-repeat;
-  /* background-size: cover; */
+  background-size: cover;
   /* Needed to position the navbar */
-  /* position: relative; */
+  position: relative;
   padding: 120px 0;
   margin: 0;
   /* background-size: 300px 100px; */
@@ -67,6 +67,7 @@ header{
 .topnav {
   background-color: #333;
   overflow:hidden;
+  width: 100%;
 }
 
 /* Style the links inside the navigation bar */
@@ -221,9 +222,11 @@ hr {
 .b1 img{
   transition: 0.5s;
   border-radius: 100px;
-  margin-left: 3%;
-  margin-top: 10%;
+  margin-left: 3%; 
+  padding: 10px;
+  width: 100%;
   }
+
 .b1 a:hover img
 {
   transform: translateY(-10px);
@@ -239,8 +242,8 @@ hr {
   margin-top: 5%;
 }
 .carousel-cell {
-  width: 35%;
-  height: 200px;
+  max-width: 35%;
+  max-height: 200px;
   margin-right: 10px;
   margin-left: 10px;
   background: #f5f6fa;
@@ -286,15 +289,14 @@ hr {
   background-size: cover;
   /* padding: 120px 0; */
   margin :0;
-  /* background-size: 300px 100px; */
+  background-size: 300px 100px;
 }
 
 .flip-box {
   background-color: transparent;
   width: 500px;
   height: 200px;
-  margin-left: 30%;
-  margin-bottom: 2%;
+  margin: auto;
   border: 1px solid #f1f1f1;
   perspective: 1000px; /* Remove this if you don't want the 3D effect */
 }
