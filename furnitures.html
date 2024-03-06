@@ -1,0 +1,326 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset=" UTF-8">
+        <title>furnitures</title>
+        <link rel="stylesheet" href="furniture.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    </head>
+    <body>
+        <header>
+            <div class="topnav">
+              <a class="active" href="#menu">Menu</a>
+              <a href="#contact">Contact</a>
+              <div class="topnav-right">
+                <a href="#search">Search
+                  <i class="fa fa-search" id="search-icon"></i>
+                </a>
+            </div>
+          </div>
+        </header>
+        <section class="menu" id="menu">
+            <div class="welcome">
+                <div class="welcome-in">
+                    <div class="cont">      
+                        <h3>Welcome To WE SHOP</h3>
+                        <h2 style="text-align:center;"> The Furnitures</h2>    
+                    </div>
+                    <div class="row">
+                        <div class="column">
+                          <img src="furnitures img/chair.jpeg"style="width:100%">
+                        </div>
+                        <div class="column">
+                            <p class="butn" style="text-align:center";>
+                                <a href="#box-out">Shop Now</a>
+                            </p> 
+                        </div>
+                        <div class="column">
+                          <img src="discntadd.webp" style="width:100%">
+                        </div>
+                      </div>
+                </div>
+                </div>
+            </section>
+            <section class="box-out" id="box-out">
+                <div class="box-in">
+                    <div class="box-image">
+                        <img src="furnitures img/wallself.jpeg">
+                    </div>
+                    <div class="content">
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                        <h3>Wall Self</h3>
+                        <p>Visit here...</p>
+                        <!-- <a href="cart.html" class="btn">BUY</a> -->
+
+                        <a class="btn" onclick="document.getElementById('id03').style.display='block'" style="width:auto;">buy</a>
+
+                            <div id="id03" class="modal">
+                              <form class="modal-content animate" action="/action_page.php" method="post">
+                                <div class="imgcontainer">
+                                  <span onclick="document.getElementById('id03').style.display='none'" class="close">&times;</span>
+                                  <img src="furnitures img/wallself.jpeg" alt="Avatar" class="avatar">
+                                  <h3>Wall Self</h3>
+                                </div>
+                            
+                                <div class="container">
+                                  <label for="uname"><b>Size</b></label>
+                                  <input type="number" placeholder="Enter Size" name="uname" required>
+                            
+                                  <label for="uname"><b>Quantity</b></label>
+                                  <input type="number" placeholder="Enter Quantity You Need" name="uname" required>
+                            
+                                  <label for="uname"><b>Pincode</b></label>
+                                  <input type="number" placeholder="Enter pincode" name="uname" required>
+                            
+                                  <label for="psw"><b>Address</b></label>
+                                  <input type="text" placeholder="Enter Address with Door no" name="uname" required>
+                            
+                                  <label for="uname"><b>Phone No</b></label>
+                                  <input type="number" placeholder="Enter Phone No" name="uname" required>
+                                    
+                                  <button type="submit">BUY</button>
+                                </div>
+                            
+                                <div class="container" style="background-color:#f1f1f1">
+                                  <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+                                </div>
+                              </form>
+                            </div>
+                        <span class="price">₹1200</span>
+                    </div>
+                </div>          
+                
+                <div class="box-out">
+                    <div class="box-in">
+                        <div class="box-image">
+                            <img src="furnitures img/bookrack.jpeg">
+                        </div>
+                        <div class="content">
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                            <h3>Book Rack</h3>
+                            <p>Visit here...</p>
+                            <a href="#" class="btn">BUY</a>
+                            <span class="price">₹5000</span>
+                        </div>
+                    </div>          
+                </div>
+                <div class="box-out">
+                    <div class="box-in">
+                        <div class="box-image">
+                            <img src="furnitures img/shoerack.jpeg">
+                        </div>
+                        <div class="content">
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                            <h3>Shoe Rack</h3>
+                            <p>Visit here...</p>
+                            <a href="#" class="btn">BUY</a>
+                            <span class="price">₹3000</span>
+                        </div>
+                    </div>          
+                </div>
+                <div class="box-out">
+                    <div class="box-in">
+                        <div class="box-image">
+                            <img src="furnitures img/sofachair.jpeg">
+                        </div>
+                        <div class="content">
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                            <h3>Sofa Chair</h3>
+                            <p>Visit here...</p>
+                            <a href="#" class="btn">BUY</a>
+                            <span class="price">₹8999</span>
+                        </div>
+                    </div>          
+                </div>
+                </div>
+                <div class="box-out">
+                    <div class="box-in">
+                        <div class="box-image">
+                            <img src="furnitures img/dinningtable.jpeg">
+                        </div>
+                        <div class="content">
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                            <h3>Dinning Table</h3>
+                            <p>Visit here...</p>
+                            <a href="#" class="btn">BUY</a>
+                            <span class="price">₹10000</span>
+                        </div>
+                    </div>          
+                </div>
+                <div class="box-out">
+                    <div class="box-in">
+                        <div class="box-image">
+                            <img src="furnitures img/wardrobe.jpeg">
+                        </div>
+                        <div class="content">
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                            <h3>Wardrobe</h3>
+                            <p>Visit here...</p>
+                            <a href="#" class="btn">BUY</a>
+                            <span class="price">₹10,000</span>
+                        </div>
+                    </div>          
+                </div>
+                <div class="box-out">
+                    <div class="box-in">
+                        <div class="box-image">
+                            <img src="furnitures img/studytable.jpeg">
+                        </div>
+                        <div class="content">
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                            <h3>Study Table</h3>
+                            <p>Visit here...</p>
+                            <a href="#" class="btn">BUY</a>
+                            <span class="price">₹2000</span>
+                        </div>
+                    </div>          
+                </div>
+                <div class="box-out">
+                    <div class="box-in">
+                        <div class="box-image">
+                            <img src="furnitures img/seesa.jpeg">
+                        </div>
+                        <div class="content">
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                            <h3>Swing Chair</h3>
+                            <p>Visit here...</p>
+                            <a href="#" class="btn">BUY</a>
+                            <span class="price">₹1200</span>
+                        </div>
+                    </div>          
+                </div>
+                <div class="box-out">
+                    <div class="box-in">
+                        <div class="box-image">
+                            <img src="furnitures img/sofa.jpg">
+                        </div>
+                        <div class="content">
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                            <h3>Sofa</h3>
+                            <p>Visit here...</p>
+                            <a href="#" class="btn">BUY</a>
+                            <span class="price">₹12,000</span>
+                        </div>
+                    </div>          
+                </div>
+                <div class="box-out">
+                    <div class="box-in">
+                        <div class="box-image">
+                           <img src="furnitures img/gaming table.webp">
+                        </div>
+                        <div class="content">
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                            <h3>Gamming Table</h3>
+                            <p>Visit here...</p>
+                            <a href="#" class="btn">BUY</a>
+                            <span class="price">₹7,000</span>
+                        </div>
+                    </div>          
+                </div>
+                <div class="box-out">
+                    <div class="box-in">
+                        <div class="box-image">
+                             <img src="furnitures img/comp table.webp">
+                        </div>
+                        <div class="content">
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                            <h3>Computer Table</h3>
+                            <p>Visit here...</p>
+                            <a href="#" class="btn">BUY</a>
+                            <span class="price">₹800</span>
+                        </div>
+                    </div>          
+                </div>
+                <div class="box-out">
+                    <div class="box-in">
+                        <div class="box-image">
+                            <img src="furnitures img/bed.jpeg">
+                        </div>
+                        <div class="content">
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                            <h3>Bed</h3>
+                            <p>Visit here...</p>
+                            <a href="#" class="btn">BUY</a>
+                            <span class="price">₹9999</span>
+                        </div>
+                    </div>          
+                </div>
+            </section>
+            </div>
+        
+        </div>
+    </body>
+</html>

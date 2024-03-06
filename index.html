@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WE SHOP</title>
+    <link rel="icon" type="image.jpg-icon" href="C:\Users\Dhanapradha\OneDrive\Documents\project\weshop add.jpg">
+    <link rel="stylesheet" href="index.css"/>
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+</head>
+<body>
+  <!-- <section id="navbar">
+
+</section> -->
+
+<header>
+    <div class="topnav">
+      <a class="active"href="#home">Home</a>
+      <a href="#menu">Menu</a>
+      <!-- <a href="#contact">Contact</a> -->
+  <div>
+    <a onclick="document.getElementById('id11').style.display='block'" style="cursor:pointer;">Contact</a>
+
+<div id="id11" class="modalx">
+  <span onclick="document.getElementById('id11').style.display='none'" class="close">&times;</span>
+  <form class="inbckgrnd" action="/action_page.php">
+    <div class="contnr">
+      <h1>Contact Us</h1>
+      <br>
+      <div class="texttitle">
+      <h5><i class="fa fa-envelope" style="font-size:24px"></i> Mail:</h5>
+      <p>pravinece2020@gmail.com</p>
+    </div>
+      <br>
+      <div class="texttitle">
+        <h5><i class='fas fa-phone-square-alt' style='font-size:24px'></i> Phone:</h5>
+        <p>+91 8220224115</p>
+      </div>
+      <h1 style="text-align:center;">Our Team</h1>
+      <br>
+      <div class="ro">
+        <div class="co">
+          <div class="card">
+            <img src="Pravin.jpg" alt="Jane" style="width:100%">
+            <div class="contain">
+              <h2 style="text-align:center;">Mr.Pravin</h2>
+              <p style="text-align:center;" class="title">CEO & Founder</p>
+              <p style="text-align:center;">pravin25@gmail.com</p>
+              <!-- <p><button class="button">Contact</button></p> -->
+            </div>
+          </div>
+        </div>
+      
+        <div class="co">
+          <div class="card">
+            <img src="arvind passport.jpeg" alt="Mr.Arvind" style="width:100%">
+            <div class="contain">
+              <h2 style="text-align:center;">Mr.Arvind</h2>
+              <p style="text-align:center;"class="title">Director</p>
+              <p style="text-align:center;">arvind@29.com</p>
+              <!-- <p><button class="button">Contact</button></p> -->
+            </div>
+          </div>
+        </div>
+        
+        <div class="co">
+          <div class="card">
+            <img src="bala passport.jpeg" alt="John" style="width:100%">
+            <div class="contain">
+              <h2 style="text-align:center;">Mr.Bala</h2>
+              <p style="text-align:center;"class="title">Manager</p>
+              <p style="text-align:center;">bala@30.com</p>
+              <!-- <p><button class="button">Contact</button></p> -->
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="icon">
+        <a href="https://wa.me/+918220224115" class="fa fa-whatsapp"></a>
+        <a href="http://www.linkedin.com/in/pravind2506" class="fa fa-linkedin"></a>
+        <a href="https://github.com/Pravinece" class="fa fa-github"></a>
+        <a href="https://www.instagram.com/pravxn_x?igsh=MTl4NzRjc29wOHR2Mw==" class="fa fa-instagram"></a>
+
+      </div>
+    </div>
+  </form>
+
+</div>
+
+
+<script>
+// Get the modal
+var modalx = document.getElementById('id11');
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modalx) {
+        modalx.style.display = "none";
+    }
+}
+</script>
+      <a href="#search">Search
+      </a>
+      <div class="topnav-right">
+
+
+
+
+
+
+
+
+                      <!-- sign up                  - -->
+
+<a onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Sign Up</a>
+
+<div id="id01" class="modalx">
+  <span onclick="document.getElementById('id01').style.display='none'" class="clse">&times;</span>
+  <form class="modal-contex" action="/action_page.php">
+    <div class="containx">
+      <div class="imgcontx">
+    <img src="weshop add.jpg" alt="Avatar" class="avatar">
+  </div>
+      <label for="email"><b>Email</b></label>
+      <input type="text" placeholder="Enter Email" name="email" required>
+
+      <label for="psw"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" required>
+
+      <label for="psw-repeat"><b>Repeat Password</b></label>
+      <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
+      
+      <label>
+        <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
+      </label>
+
+      <p>By creating an account you agree to our<h3 href="#" style="margin-top: 1%;color:dodgerblue">Terms & Privacy</h3></p>
+
+      <div class="clearfix">
+        <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtnx">Cancel</button>
+        <button type="submit" class="signupbtnx">Sign Up</button>
+      </div>
+    </div>
+  </form>
+</div>
+
+
+
+
+
+
+
+<script>
+// Get the modal
+var modal = document.getElementById('id01');
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+</script>
+        <a href="#about">About</a>
+    </div>
+  </div>
+</header>
+<h1 id="titl">We-Shop</h1>
+  <section class="home" id="home">
+    <h1 id="titl">We-Shop</h1>
+    <div class="a1">
+      <!-- <p href="#" style="text-align:center;"> -->
+        <img src="weshop logo.jpg">
+  <!-- </p> -->
+    </div>
+      <!-- Flickity HTML init -->
+    <div class="carousel"
+        data-flickity='{ "wrapAround": true }'>
+        <div class="carousel-cell">
+          <div class="b1">
+            <!-- target="_blank" -->
+            <a href="furnitures.html">       
+              <img src="furnitures img/furniture.jpeg" width="250px" height="150px">
+              <div class="imgtext">
+                <h1 style="text-align:center; font-size:large">Furnitures</h1>
+              </div>
+            </a> 
+          </div>
+        </div>
+        <div class="carousel-cell">
+          <div class="b1">
+            <a href="appliances.html">
+              <img src="appliance.jpeg"  width="250px" height="150px">
+              <div class="imgtext">
+                <h1 style="text-align:center; font-size:large">Appliances</h1>
+              </div>
+            </a> 
+          </div>
+        </div>
+        <div class="carousel-cell">
+          <div class="b1">
+            <a href="fruits&veg.html">
+              <img src="image_fruits-and-vegetable.webp"  width="250px" height="150px">
+              <div class="imgtext">
+                <h1 style="text-align:center; font-size:large">Fruits&Vegetables</h1>
+              </div>
+            </a> 
+          </div>
+        </div>
+        <div class="carousel-cell">
+        <div class="b1">
+          <a href="groceries.html">
+            <img src="groceries.jpeg" width="250px" height="150px">
+            <div class="imgtext">
+              <h1 style="text-align:center; font-size:large">Groceries</h1>
+            </div>
+          </a>
+        </div>
+      </div>
+      <div class="carousel-cell">
+          <div class="b1">
+            <a href="snacks.html">
+              <img src="images_snacks.jpeg" width="250px" height="150px">
+              <div class="imgtext">
+                <h1 style="text-align:center; font-size:large">Snacks</h1>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+<!-- menu section starts  -->
+
+<section class="menu" id="menu">
+
+  <h1 class="heading"> our menu </h1>
+
+  <div class="flip-box">
+    <div class="flip-box-inner">
+      <div class="flip-box-front">
+        <img src="add3.jpeg" style="width:500px;height:200px">
+      </div>
+      <div class="flip-box-back">
+        <img src="add2.jpg" style="width:500px;height:200px">
+      </div>
+    </div>
+  </div>
+
+  <div class="box-container">
+
+      <div class="box">
+          <div class="image">
+              <img src="mens.jpeg" alt="">
+              <a href="#" class="fas fa-heart"></a>
+          </div>
+          <div class="content">
+              <div class="stars">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star-half-alt"></i>
+              </div>
+              <h3>Mens</h3>
+              <p>Visit Mens World here...</p>
+              <a href="#" class="btn">Tap to View</a>
+              <!-- <span class="price">$12.99</span> -->
+          </div>
+      </div>
+
+      <div class="box">
+          <div class="image">
+              <img src="womens.jpeg" alt="">
+              <a href="#" class="fas fa-heart"></a>
+          </div>
+          <div class="content">
+              <div class="stars">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star-half-alt"></i>
+              </div>
+              <h3>Womens</h3>
+              <p>Visit Womens World here...</p>
+              <a href="#" class="btn">Tap to View</a>
+              <!-- <span class="price">$12.99</span> -->
+          </div>
+      </div>
+      <div class="box">
+          <div class="image">
+              <img src="kid.jpeg" alt="">
+              <a href="#" class="fas fa-heart"></a>
+          </div>
+          <div class="content">
+              <div class="stars">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star-half-alt"></i>
+              </div>
+              <h3>Kids</h3>
+              <p>Visit Kids World here...</p>
+              <a href="#" class="btn">Tap to View</a>
+              <!-- <span class="price">$12.99</span> -->
+          </div>
+      </div>
+
+      <div class="box">
+          <div class="image">
+              <img src="gadgets.jpeg" alt="">
+              <a href="#" class="fas fa-heart"></a>
+          </div>
+          <div class="content">
+              <div class="stars">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star-half-alt"></i>
+              </div>
+              <h3>Gadgets
+              </h3>
+              <p>Visit Gadgets World here...</p>
+              <a href="#" class="btn">Tap to View</a>
+              <!-- <span class="price">$12.99</span> -->
+          </div>
+      </div>
+      </div>
+  </div>
+</section>
+<!-- menu section ends -->
+<section class="about" id="about">
+   <!-- <h1 class="heading">ABOUT</h1> -->
+     <div class="r">
+    <div class="c">
+      <h4>Help</h4>
+      <ul>
+        <li>Online Shopping Website</li>
+        <li>Register Yourself</li>
+        <li>choose the catogories as needed</li>
+        <li>List the  Products</li>
+        <li>Order your Needs</li>
+        <li>Your Order is Ready to Dispatch</li>
+
+      </ul>
+    </div>
+    <div class="c">
+      <h4>Features</h4>
+      <ul>
+        <li>Free Delivery</li>
+        <li>Good Packaging</li>
+        <li>Deliver On Time</li>
+        <li>Qualitized</li>
+        <li>Contact Easily With Saler</li>
+        <li>Priority for Coustomer</li>
+      </ul>
+    </div>
+    <div class="c">
+      <h4>Report</h4>
+      <ul>
+        <li>Worthable Products for Sale</li>
+        <li>Integrity Company</li>
+        <li>Stick to Rules</li>
+        <li>Ethical Business </li>
+      </ul>
+    </div>
+  </div>
+
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>

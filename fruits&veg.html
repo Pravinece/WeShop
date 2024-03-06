@@ -1,0 +1,355 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset=" UTF-8">
+        <title>fruits&vegs</title>
+        <!-- <link rel="stylesheet" href="style"> -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    </head>
+    <body>
+    <style>
+*{
+    font-family: 'Nunito', sans-serif;
+    margin:0; padding:0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none; border:none;
+    text-transform: capitalize;
+    transition: all .2s linear;
+}
+:root{
+    --box-shadow:0 .5rem 1.5rem rgba(0,0,0,.1);
+    --green:#27ae60;
+      --black:#192a56;
+      --light-color:#666;
+  }
+  html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-padding-top: 5rem;
+    scroll-behavior: smooth;
+  }
+  section:nth-child(even){
+    background:rgb(205, 120, 120);
+  }
+section{
+    padding:2rem 9%;
+  }
+.topnav {
+    background-color: #333;
+    overflow:hidden;
+  }
+  
+  /* Style the links inside the navigation bar */
+  .topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+  font-size: 17px;
+  }
+  
+  /* Change the color of links on hover */
+  .topnav a:hover {
+    background-color: #d25401;
+    color: white;
+  }
+  
+  /* Add a color to the active/current link */
+  .topnav a.active {
+  background-color: #d25401;
+  color: white;
+  
+  }
+  
+  /* Right-aligned section inside the top navigation */
+  .topnav-right {
+  float: right;
+  }
+  .welcome{
+    display: grid;
+    grid-template-columns: auto;
+    gap:1.5rem;
+  }
+  .welcome-in{
+    background: #fff;
+    border:.1rem solid rgba(0,0,0,.2);
+    border-radius: .5rem;
+    box-shadow: var(--box-shadow);    
+  }
+
+  .cont{
+    padding:2rem;
+    padding-top: 0;
+  }
+  .cont h3{
+    /* font-size: 2.5rem; */
+    color:#ff6200;
+    font-size: 3.5rem;
+    text-align: center;
+    margin-top: 1%;
+  }
+  
+.cont h2{
+    color:rgb(249, 162, 0);
+    font-size: 2.5rem;
+    background: rgb(0, 0, 0);
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 100px;
+    padding: 10px;
+    position:absolute;
+    margin-left: 33%;
+    margin-top: 1%;
+
+  }
+  .column {
+    float: left;
+    width: 31.33%;
+    padding: 5px;
+  }
+  
+  /* Clear floats after image containers */
+  .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  
+   
+  .butn{
+    display: inline-block;
+    font-size: 1.7rem;
+    color:#fff;
+    background:orangered;
+    border-radius: .5rem;
+    cursor: pointer;
+   padding:3% 3%;
+    margin-left: 30%;
+    margin-top: 40%; 
+  }
+  
+  .butn:hover{
+    background: var(--green);
+    letter-spacing: .1rem;
+  }
+  
+  .box-out{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap:1.5rem;
+  }
+  .box-in{
+    background: #fff;
+    border:.1rem solid rgba(0,0,0,.2);
+    border-radius: .5rem;
+    box-shadow: var(--box-shadow);    
+  }
+  .box-image{
+    height: 25rem;
+    width: 100%;
+    padding:1.5rem;
+    overflow: hidden;
+    position: relative;
+  }
+  .box-image img{
+    height: 100%;
+    width: 100%;
+    border-radius: .5rem;
+    object-fit: cover;
+  }
+  .content{
+    padding:2rem;
+    padding-top: 0;
+  }
+.stars{
+    padding-bottom: 1rem;
+  }
+  
+.stars i{
+   font-size: 1.7rem;
+   color:#011007;
+  }
+  
+.content h3{
+    color:#d25401;
+    font-size: 2.5rem;
+  }
+  
+.content p{
+    color:var(--light-color);
+    font-size: 1.6rem;
+    padding:.5rem 0;
+    line-height: 1.5;
+}
+.price{
+    color:var(--green);
+    margin-left: 1rem;
+    font-size: 2.5rem;
+}
+  .btn{
+    margin-top: 1rem;
+    display: inline-block;
+    font-size: 1.7rem;
+    color:#fff;
+    background:orangered;
+    border-radius: .5rem;
+    cursor: pointer;
+    padding:1% 1%;
+  }
+  
+  .btn:hover{
+    background: var(--green);
+    letter-spacing: .1rem;
+  }
+ .menu{
+  background-color: #c8d6e5;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  }
+        </style>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- ---------------------- -->
+        <header>
+            <div class="topnav">
+              <a class="active" href="#menu">Menu</a>
+              <a href="#contact">Contact</a>
+              <div class="topnav-right">
+                <a href="#search">Search
+                  <i class="fa fa-search" id="search-icon"></i>
+                </a>
+            </div>
+          </div>
+        </header>
+        <section class="menu" id="menu">
+            <div class="welcome">
+                <div class="welcome-in">
+                    <div class="cont">      
+                        <h3>Welcome To WE SHOP </h3>
+                        <h2 style="margin-left: 29%;"> The Fruits & vegetables</h2>    
+                    </div>
+                    <div class="row">
+                        <div class="column">
+                          <img src="Fruits-and-Vegetables.jpg"style="width:100%">
+                        </div>
+                        <div class="column">
+                            <p class="butn" style="text-align:center";>
+                                <a href="#box-out">Shop Now</a>
+                            </p> 
+                        </div>
+                        <div class="column">
+                          <img src="discntadd.webp" style="width:100%">
+                        </div>
+                      </div>
+                </div>
+                </div>
+            </section>
+            <section class="box-out" id="box-out">
+                <div class="box-in">
+                    <div class="box-image">
+                        <img src="fruits&veg img/apple.jpg">
+                    </div>
+                    <div class="content">
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                        <h3>Apple</h3>
+                        <p>Visithere...</p>
+                        <a href="#" class="btn">BUY</a>
+                        <span class="price">$99</span>
+                    </div>
+                </div>          
+                
+                <div class="box-out">
+                    <div class="box-in">
+                        <div class="box-image">
+                            <img src="fruits&veg img/orange.jpg">
+                        </div>
+                        <div class="content">
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                            <h3>Orange</h3>
+                            <p>Visit here...</p>
+                            <a href="#" class="btn">BUY</a>
+                            <span class="price">₹99</span>
+                        </div>
+                    </div>          
+                </div>
+                <div class="box-out">
+                    <div class="box-in">
+                        <div class="box-image">
+                            <img src="fruits&veg img/banana.jpg">
+                        </div>
+                        <div class="content">
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                            <h3>Bannana</h3>
+                            <p>Visit here...</p>
+                            <a href="#" class="btn">BUY</a>
+                            <span class="price">₹69</span>
+                        </div>
+                    </div>          
+                </div>
+                <div class="box-out">
+                    <div class="box-in">
+                        <div class="box-image">
+                            <a href="#"> <img src="fruits&veg img/cherry.jpg"></a>
+                        </div>
+                        <div class="content">
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                            <h3>Cherry</h3>
+                            <p>Visit here...</p>
+                            <a href="#" class="btn">BUY</a>
+                            <span class="price">₹199</span>
+                        </div>
+                    </div>          
+                </div>
+                
+                
+            </section>
+            </div>
+        
+        </div>
+    </body>
+
+</html>
